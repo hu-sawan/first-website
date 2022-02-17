@@ -1087,7 +1087,7 @@ ul {
 	writing-mode: vertical-rl;
 	padding: 10px 10px 35px 10px;
 	display: flex;
-	justify-content: center;
+	align-items: center;
 	font-size: 18px;
 	font-weight: bold;
 	width: 40px;
