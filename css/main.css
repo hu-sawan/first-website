@@ -1158,7 +1158,7 @@ ul {
 }
 @media (max-width: 991px) {
 	.pricing .box a {
-		font-size: 10px;
+		font-size: 1px;
 	}
 }
 .pricing .box a:hover {
