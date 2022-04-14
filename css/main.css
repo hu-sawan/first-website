@@ -1156,6 +1156,11 @@ ul {
 	font-weight: bold;
 	transition: var(--main-transition);
 }
+@media (max-width: 991px) {
+	.pricing .box a {
+		font-size: 12px;
+	}
+}
 .pricing .box a:hover {
 	background-color: var(--main-color-alt);
 	color: white;
