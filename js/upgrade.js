@@ -24,7 +24,7 @@ let counter = setInterval(() => {
 	let hours = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60) );
 	document.querySelector(".hours").innerHTML = hours  < 10 ? `0${hours}` : hours;
 	
-	let minutes = Math.floor((dateDiff % (100 * 60 * 60)) / (1000 * 60));
+	let minutes = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
 	document.querySelector(".minutes").innerHTML = minutes  < 10 ? `0${minutes}` : minutes;
 	
 	let seconds = Math.floor((dateDiff % (1000 * 60)) / 1000);
