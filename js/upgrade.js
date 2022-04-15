@@ -1,14 +1,3 @@
-let section = document.querySelector(".skills");
-let progress = document.querySelectorAll(".prog span");
-
-window.onscroll = function () {
-	if (window.scrollY >= section.offsetTop - 250) {
-		progress.forEach((span) => {
-		span.style.width = span.dataset.width;
-		});
-	}
-};
-
 let countDownDate = new Date("May 17, 2022 19:55:45").getTime();
 let counter = setInterval(() => {
 	//Get Current Date
@@ -35,11 +24,23 @@ let counter = setInterval(() => {
 	}
 }, 1000);
 
+// <============================================================>
+
+let section = document.querySelector(".skills");
+let progress = document.querySelectorAll(".prog span");
+
 let stat = document.querySelectorAll(".stats .box .number");
 let statSec = document.querySelector(".stats");
 let started = false; // Function started ? no
 
 window.onscroll =  function () {
+	//skill width animate
+	if (window.scrollY >= section.offsetTop - 250) {
+		progress.forEach((span) => {
+		span.style.width = span.dataset.width;
+		});
+	}
+	//stats numbers
 	if (window.scrollY >= statSec.offsetTop) {
 		if (!started) {
 			stat.forEach((number) => startCount(number));
